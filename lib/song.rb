@@ -14,7 +14,7 @@ class Song
   end
 
   def save
-    self.class.all << self ####why class here?
+    self.class.all << self ####self.class.all is same as @@all... it's a song instance, calling the class, Song, on the .all method, which returns @@all
   end
 
   def self.create
